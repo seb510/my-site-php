@@ -1,16 +1,18 @@
 <?php 
 	//print_r($_POST);
+	$name = $_POST['name'];
 	$email = $_POST['email'];
 	$message = $_POST['message'];
 
 	$error = '';
-	if (trim($email) == '') 
-		$error = 'Введите ваш email';
-	else if (trim($message) == '') 
-		$error = 'Введите само сообщение';
-	else if (strlen($message) < 10) 
-		$error = 'Сообщения должно быть более 10 симолов';
-
+	if (trim($name) == '');
+//		$error = 'Введите ваше имя';
+	else if (trim($email) == ''); 
+//		$error = 'Введите ваш email';
+	else if (trim($message) == '');
+//		$error = 'Введите само сообщение';
+	else if (strlen($message) < 10); 
+//		$error = 'Сообщения должно быть более 10 симолов';
 	if ($error != '') {
 		echo $error;
 		exit;
@@ -22,6 +24,6 @@
 
 	mail('sebistian@ukr.net', $subject, $message, $headers);
 
-	header('Location: /about.php');//Постле отправки форми нас перебрасывает
+	header('Location: /index.php');//Постле отправки форми нас перебрасывает
 
  ?>

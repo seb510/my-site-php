@@ -2,6 +2,7 @@ a.logo:hover, a.logo:active {
 	outline: none;
 	text-decoration: none;
 }
+
 .logo {
 	display: inline-block;
 	color: rgb(29, 29, 41);
@@ -12,7 +13,37 @@ a.logo:hover, a.logo:active {
 .logo img {
 	width: 150px;
 }
+
+input.form-control, .btn{
+	margin: 5px 0;
+}
+.card.red{
+	border: 1px solid red;
+}
+textarea.form-control {
+	resize: none;
+}
 .card {
 	max-width: 32%;
+	margin: 5px;
+}
+
+@media (max-width: 991.98px) { 
+	.content {
+		justify-content: center;
+	}
+	.card {
+		max-width: 40%;
+	}
+}
+
+@media (max-width: 767.98px) { 
+	.card {
+		max-width: 95%;
+	}
+}
+
+@media (max-width: 575.98px) { 
+	
 }
 
