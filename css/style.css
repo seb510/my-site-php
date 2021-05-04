@@ -1,49 +1,111 @@
-a.logo:hover, a.logo:active {
-	outline: none;
-	text-decoration: none;
+a.logo:hover,
+a.logo:active {
+    outline: none;
+    text-decoration: none;
 }
 
 .logo {
-	display: inline-block;
-	color: rgb(29, 29, 41);
-	font-size: 25px;
-	font-weight: 600;
+    display: inline-block;
+    color: rgb(29, 29, 41);
+    font-size: 25px;
+    font-weight: 600;
 }
 
 .logo img {
-	width: 150px;
+    width: 150px;
 }
 
-input.form-control, .btn{
-	margin: 5px 0;
+input.form-control,
+.btn {
+    margin: 5px 0;
 }
-.card.red{
-	border: 1px solid red;
+
+.card.red {
+    border: 1px solid red;
 }
+
 textarea.form-control {
-	resize: none;
+    resize: none;
 }
+
 .card {
-	max-width: 32%;
-	margin: 5px;
+    max-width: 32%;
+    margin: 5px;
 }
 
-@media (max-width: 991.98px) { 
-	.content {
-		justify-content: center;
-	}
-	.card {
-		max-width: 40%;
-	}
+.form__block,
+.block__item {
+    width: 460px;
+    margin: 0 auto;
 }
 
-@media (max-width: 767.98px) { 
-	.card {
-		max-width: 95%;
-	}
+.form__list {
+    background-color: #2fcc9a;
+    border: 2px solid #228e6c;
+    border-radius: 10px;
+    padding: 20px 10px;
+    display: flex;
 }
 
-@media (max-width: 575.98px) { 
-	
+#task {
+    width: 60%;
+    margin-right: 15px;
 }
 
+.block__item {
+    padding: 0;
+}
+
+.block__list {
+    margin-top: 20px;
+}
+
+.blck__list-title {
+    text-align: center;
+}
+
+.block__item-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #fcfcfc;
+    border: 1px solid silver;
+    border-radius: 5px;
+}
+
+.block__item_list:hover {
+    background-color: #e5e5e5;
+}
+
+.btn-delete {
+    border: 0;
+    padding: 5px 15px;
+    color: #fff;
+    font-size: 13px;
+    background-color: #db5757;
+    border-radius: 5px;
+}
+
+.btn-delete:hover {
+    background-color: #a04141;
+}
+
+@media (max-width: 991.98px) {
+    .content {
+        justify-content: center;
+    }
+    .card {
+        max-width: 40%;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .card {
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 575.98px) {}
